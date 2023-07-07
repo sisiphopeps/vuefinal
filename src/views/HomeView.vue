@@ -32,6 +32,8 @@ export default {
   transform: translate(-50%, -50%);
   font-weight: bolder;
   font-size: 30px;
+  animation:lightSpeedInRight ;
+  animation-duration: 2s;
 }
 #homeImg {
   width: 100%;
