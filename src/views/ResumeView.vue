@@ -25,6 +25,9 @@
         </div>
       </div>
     </div>
+    <div>
+    </div>
+    <a href="https://drive.google.com/file/d/1M7HuxHgsv5U8fIG5MpItgKiV9giMYwLd/view" class="card-link">Download CV</a>
     </div>
 </template>
 
@@ -51,6 +54,22 @@
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+}
+.card-link {
+  display: flex;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  background-color: purple;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+  box-shadow: 4px 8px 0px rgb(110, 109, 109) ;
+  width:120px;
+  align-items: center;
+}
+.card-link:hover {
+  background-color:  #F3DEBA;
 }
 
 @media(width < 350px) {

@@ -90,4 +90,8 @@
 </script>
 
 <style scoped>
+a{
+  animation:backInUp!important;
+  animation-duration: 2s!important;
+}
 </style>

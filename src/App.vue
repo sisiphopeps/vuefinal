@@ -16,12 +16,14 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Cormorant', serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   background-color: #E2CBB9;
+
   display: grid;
   grid-template-columns: repeat (3, 1fr );
   grid-template-rows: auto minmax(74.2vh, 1fr) auto;

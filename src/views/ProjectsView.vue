@@ -39,6 +39,7 @@
 
 .card {
   background-color: #D9D9D9;
+  box-shadow: 4px 8px 0px grey;
 }
 body {
   background-clip: #E2CBB9;
