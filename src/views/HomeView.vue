@@ -1,6 +1,7 @@
 <template>
   <div class="home">
-    <p>
+    <img src="https://i.postimg.cc/hjPBL6KW/nude-color-background-1080-x-1920-t0snieucs4r32iv4.jpg" alt="" id="homeImg">
+    <p class="textHome">
       S.Pepengweni<br/>
       Web Developer
     </p>
@@ -21,14 +22,22 @@ export default {
 
 <style scoped>
 .home {
-  background-image: url(https://i.postimg.cc/hjPBL6KW/nude-color-background-1080-x-1920-t0snieucs4r32iv4.jpg);
-  object-fit: cover;
-  color:white;
-  font-weight: bold;
- background-size: cover;
- min-height:100vh;
+  position: relative;
+  text-align: center;
 }
-@media (width <800px){
+.textHome{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bolder;
+  font-size: 30px;
+}
+#homeImg {
+  width: 100%;
+  height: 100vh;
+}
+@media (width < 800px){
   .home{
     object-fit: contain;
     width: 100%;

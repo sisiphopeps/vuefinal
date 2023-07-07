@@ -6,13 +6,13 @@
       </div>
     </div>
     <div class="row">
-        <div class="col-6" id="cards">
-          <div class="m-2" v-for="skill in skills" :key="skill.id" style="width: 10rem;">
-              <img :src="skill.image" class="card-img-top" alt="...">
+        <div class="col-sm-6 col-lg-6" id="cards">
+          <div  v-for="skill in skills" :key="skill.id">
+              <img :src="skill.image" class="card-img-top" id="skillImg" alt="...">
                 <p class="card-text">{{skill.rate}}</p>
             </div>
         </div>
-        <div class="col-6">
+        <div class="col-sm-6 col-lg-6">
           <div id="edu">
             <h1>EDUCATION</h1>
             <div class="card" v-for="education in education" :key="education.id">
@@ -51,5 +51,11 @@
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+}
+
+@media(width < 350px) {
+#skillImg {
+  width: 6rem;
+}
 }
 </style>

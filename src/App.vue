@@ -22,6 +22,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   background-color: #E2CBB9;
+  display: grid;
+  grid-template-columns: repeat (3, 1fr );
+  grid-template-rows: auto minmax(74.2vh, 1fr) auto;
 
 
 
@@ -39,7 +42,7 @@ export default {
 
 
 
-  
+
 }
 
 nav {

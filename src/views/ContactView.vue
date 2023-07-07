@@ -6,11 +6,13 @@
       method="POST"
     >
     <label for="name">Name:</label><br>
-    <input type="text"><br>
+    <input v-model="name" type="text" placeholder="Enter your full name"><br>
+
       <label for="email">Your email:</label><br>
-        <input type="email" name="email" ><br>
+        <input v-model="email" type="email" name="email" placeholder="Enter your email address" ><br>
+
       <label>Your message:</label><br>
-        <textarea name="message"></textarea><br>
+        <textarea v-model="MIDIMessageEvent" name="message" placeholder="Type your message"></textarea><br>
     
       <!-- your other form fields go here -->
       <button type="submit">Send</button>
